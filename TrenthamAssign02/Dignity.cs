@@ -20,12 +20,13 @@ namespace TrenthamAssign02
             return dignity.Count;
         }
 
-        public void ToString()
+        public override string ToString()
         {
             foreach(string dragon in dignity)
             {
-                Console.WriteLine(dragon);
+               return dragon;
             }
+            return "";
         }
     }
 }
