@@ -22,11 +22,20 @@ namespace TrenthamAssign02
 
         public override string ToString()
         {
+            string alldragons = "";
             foreach(string dragon in dignity)
             {
-               return dragon;
+               alldragons += dragon + "\n";
             }
-            return "";
+            return alldragons;
+        }
+
+        public decimal GetLargest()
+        {
+            decimal largest = 0;
+
+            var item = dignity.
+            return largest;
         }
     }
 }

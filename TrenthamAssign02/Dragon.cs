@@ -58,16 +58,17 @@ namespace TrenthamAssign02
                 Good = good;
             }
 
-            public void ToString()
+        public override string ToString()
+        {
+            if (Good == true)
             {
-                Console.Write(Name + " - " + Type + " - " + Size + " - ");
-                if (Good == true)
-                {
-                    Console.Write("Good");
-                }
-                else
-                    Console.Write("Evil");
+                return Name + " - " + Type + " - " + Size + " - " + "Good";
             }
-
+            else
+            {
+                return Name + " - " + Type + " - " + Size + " - " + "Evil";
+            }
         }
+
+    }
     }
