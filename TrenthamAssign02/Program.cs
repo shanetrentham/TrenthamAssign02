@@ -33,10 +33,13 @@ namespace TrenthamAssign02
                         Console.WriteLine($"There are {dignity.Count()} in the dignity.");
                         break;
                     case "3":
-                       
+                        Dragon dragon = dignity.GetLargest();
+                        Console.WriteLine($"The largest dragon is: {dragon.ToString()}");
                         break;
                     case "4":
-                        Console.WriteLine("");
+                        Console.WriteLine("Enter the type of dragon you are looking for: ");
+                        string type = Console.ReadLine();
+
                         break;
                     case "5":
                         Console.WriteLine("");

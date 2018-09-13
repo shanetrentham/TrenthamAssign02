@@ -30,12 +30,30 @@ namespace TrenthamAssign02
             return alldragons;
         }
 
-        public decimal GetLargest()
+        public Dragon GetLargest()
         {
-            decimal largest = 0;
+            Dragon largest = null;
 
-            var item = dignity.
+            foreach(Dragon dragon in dignity)
+            {
+                if (dragon.GetSize() > largest.GetSize())
+                {
+                    largest = dragon;
+                }
+            }
             return largest;
+        }
+        
+        public Dragon GetLargestofType(string type)
+        {
+            foreach(Dragon dragon in dignity)
+            {
+                if(dragon.getType() == type)
+                {
+                    GetLargest();
+                }
+                  
+            }
         }
     }
 }
