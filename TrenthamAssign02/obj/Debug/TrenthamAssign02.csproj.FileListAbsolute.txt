@@ -1,2 +1,7 @@
 c:\users\shane\onedrive\documents\visual studio 2015\Projects\TrenthamAssign02\TrenthamAssign02\bin\Debug\TrenthamAssign02.exe.config
 C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\bin\Debug\TrenthamAssign02.exe.config
+C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\bin\Debug\TrenthamAssign02.exe
+C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\bin\Debug\TrenthamAssign02.pdb
+C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\obj\Debug\TrenthamAssign02.csprojResolveAssemblyReference.cache
+C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\obj\Debug\TrenthamAssign02.exe
+C:\Users\shane\OneDrive\Documents\CSCI 3005\TrenthamAssign02\TrenthamAssign02\obj\Debug\TrenthamAssign02.pdb

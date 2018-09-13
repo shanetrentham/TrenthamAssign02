@@ -9,6 +9,7 @@ namespace TrenthamAssign02
     class Dignity
     {
         ArrayList dignity = new ArrayList();
+        ArrayList DragonType = new ArrayList();
 
         public void AddDragon(Dragon dragon)
         {
@@ -32,7 +33,7 @@ namespace TrenthamAssign02
 
         public Dragon GetLargest()
         {
-            Dragon largest = null;
+            Dragon largest;
 
             foreach(Dragon dragon in dignity)
             {
@@ -50,10 +51,45 @@ namespace TrenthamAssign02
             {
                 if(dragon.getType() == type)
                 {
-                    GetLargest();
+                    DragonType.Add(dragon);
                 }
                   
             }
+            Dragon Largest = null;
+            foreach(Dragon dragon in DragonType)
+            {
+                if (dragon.GetSize() > Largest.GetSize())
+                {
+                    Largest = dragon;
+                }
+            }
+            return Largest;
+        }
+
+        public int GetGood()
+        {
+            int total = 0;
+            foreach (Dragon dragon in dignity)
+            {
+                if(dragon.GetGood())
+                {
+                    total++;
+                }
+            }
+            return total;
+        }
+
+        public int GetBad()
+        {
+            int total = 0;
+            foreach (Dragon dragon in dignity)
+            {
+                if(dragon.GetGood() == false)
+                {
+                    total++;
+                }
+            }
+            return total;
         }
     }
 }

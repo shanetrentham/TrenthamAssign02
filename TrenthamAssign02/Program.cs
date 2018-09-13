@@ -14,12 +14,12 @@ namespace TrenthamAssign02
 
             while (choice != "7")
             {
-                Console.WriteLine("1. Add a dragon " +
-                             "2. Get number of dragons in the dignity" +
-                             "3. Find the largest dragon" +
-                             "4. Find the largest dragon of a type" +
-                             "5. Get the count of good" +
-                             "6. Get the count of bad dragons" +
+                Console.WriteLine("1. Add a dragon \n" +
+                             "2. Get number of dragons in the dignity\n" +
+                             "3. Find the largest dragon\n" +
+                             "4. Find the largest dragon of a type\n" +
+                             "5. Get the count of good\n" +
+                             "6. Get the count of bad dragons\n" +
                              "7. Quit");
                 choice = Console.ReadLine();
 
@@ -39,16 +39,18 @@ namespace TrenthamAssign02
                     case "4":
                         Console.WriteLine("Enter the type of dragon you are looking for: ");
                         string type = Console.ReadLine();
-
+                        Dragon dragonType = dignity.GetLargestofType(type);
+                        Console.WriteLine($"The largest dragon of type {type} is {dragonType.ToString()}");
                         break;
                     case "5":
-                        Console.WriteLine("");
+                        Console.WriteLine($"There are {dignity.GetGood()} good dragons in the dignity.");
                         break;
                     case "6":
-                        Console.WriteLine("");
+                        Console.WriteLine($"There are {dignity.GetBad()} bad dragons in the dignity.");
                         break;
                     case "7":
                         Console.WriteLine("Program ending...");
+                        System.Environment.Exit(0);
                         break;
                         
                 }
