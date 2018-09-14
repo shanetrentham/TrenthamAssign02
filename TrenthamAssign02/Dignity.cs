@@ -33,7 +33,7 @@ namespace TrenthamAssign02
 
         public Dragon GetLargest()
         {
-            Dragon largest;
+            Dragon largest = new Dragon("", "", 0, true);
 
             foreach(Dragon dragon in dignity)
             {
@@ -55,15 +55,25 @@ namespace TrenthamAssign02
                 }
                   
             }
-            Dragon Largest = null;
-            foreach(Dragon dragon in DragonType)
+            if(DragonType.Count == 0)
             {
-                if (dragon.GetSize() > Largest.GetSize())
-                {
-                    Largest = dragon;
-                }
+                Console.WriteLine($"There are no dragons of {type} in the dignity");
+                return null;
             }
-            return Largest;
+            else
+            {
+                Dragon Largest = new Dragon("", "", 0, true);
+                foreach (Dragon dragon in DragonType)
+                {
+                    if (dragon.GetSize() > Largest.GetSize())
+                    {
+                        Largest = dragon;
+                    }
+                }
+                return Largest;
+            }
+           
+            
         }
 
         public int GetGood()

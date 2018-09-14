@@ -1,4 +1,9 @@
 ﻿using System;
+/*Shane Trentham
+ Assignment 02
+ 9/13/2018
+ Dr. Church
+ CSCI 3005*/
 
 namespace TrenthamAssign02
 {
@@ -14,7 +19,8 @@ namespace TrenthamAssign02
 
             while (choice != "7")
             {
-                Console.WriteLine("1. Add a dragon \n" +
+                Console.WriteLine("\n\nThis Program is case specific!" +
+                             "1. Add a dragon \n" +
                              "2. Get number of dragons in the dignity\n" +
                              "3. Find the largest dragon\n" +
                              "4. Find the largest dragon of a type\n" +
@@ -30,7 +36,7 @@ namespace TrenthamAssign02
                         dignity.AddDragon(builder.GetDragon());
                         break;
                     case "2":
-                        Console.WriteLine($"There are {dignity.Count()} in the dignity.");
+                        Console.WriteLine($"There are {dignity.Count()} dragons in the dignity.");
                         break;
                     case "3":
                         Dragon dragon = dignity.GetLargest();
